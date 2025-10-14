@@ -28,7 +28,7 @@ function App() {
   };
 
 const downloadCV = () => {
-    const fileUrl = "/My_CV.pdf"; 
+    const fileUrl = "/My_CV.pdf "; 
     const fileName = "Kubranur_dogan_CV.pdf"; 
 
     const link = document.createElement("a");
