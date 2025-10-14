@@ -4,11 +4,7 @@ function CoffeeButton() {
   return (
     <div
       className="d-flex align-items-center justify-content-center rounded-circle coffee-button"
-      style={{
-        width: "150px",
-        height: "150px",
-        backgroundColor: "#896ec058", // açık mor ton
-      }}
+      
     >
       <svg
         viewBox="0 0 200 200"

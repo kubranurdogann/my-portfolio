@@ -28,16 +28,13 @@ function App() {
   };
 
 const downloadCV = () => {
-    // public klasöründeki PDF dosya yolu
     const fileUrl = "/MyCV.pdf"; 
-    const fileName = "Kubranur_dogan_CV.pdf"; // indirilen dosya adı
+    const fileName = "Kubranur_dogan_CV.pdf"; 
 
-    // link elementi oluştur
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = fileName;
 
-    // DOM'a ekle, tıkla ve kaldır
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -61,9 +58,9 @@ const downloadCV = () => {
 
 
       <div className="row m-5">
-        <div className="col-md-9">
+        <div className="col-md-9 col-sm-12">
           <h1 className="pb-3">Hi, I'm Kubranur Dogan!</h1>
-          <p>
+          <p className="text-justify">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -93,58 +90,58 @@ const downloadCV = () => {
           </div>
         </div>
       </div>
-      <div className="row px-5 py-5 ">
-        <div className="col-md-2 d-flex justify-content-start align-items-center">
+      <div className="row tech-stack container">
+        <div className="col-md-2 tech-logo ">
           <img
             src={HTML}
             alt="html-logo"
             className="img-fluid logo-hover"
-            width="150"
+            
           />
         </div>
 
-        <div className="col-md-2 d-flex justify-content-start align-items-center">
+        <div className="col-md-2 tech-logo ">
           <img
             src={CSS}
             alt="css-logo"
-            className="img-fluid logo-hover"
-            width="150"
+            className="img-fluid logo-hover "
+            
           />
         </div>
-        <div className="col-md-2 d-flex justify-content-start  align-items-center">
+        <div className="col-md-2 tech-logo ">
           <img
             src={react}
             alt="react-logo"
-            className="img-fluid logo-hover"
-            width="125"
+            className="img-fluid logo-hover img-react"
+            
           />
         </div>
-        <div className="col-md-2  d-flex justify-content-start  align-items-center">
+        <div className="col-md-2 tech-logo ">
           <img
             src={nodejs}
             alt="nodejs-logo"
-            className="img-fluid logo-hover"
-            width="150"
+            className="img-fluid logo-hover "
+           
           />
         </div>
-        <div className="col-md-2 d-flex justify-content-start  align-items-center">
+        <div className="col-md-2 tech-logo ">
           <img
             src={mongodb}
             alt="mongodb-logo"
-            className="img-fluid logo-hover"
-            width="150"
+            className="img-fluid logo-hover "
+            
           />
         </div>
-        <div className="col-md-2 d-flex justify-content-start  align-items-center">
+        <div className="col-md-2 tech-logo ">
           <img
             src={flutter}
             alt="flutter-logo"
             className="img-fluid logo-hover"
-            width="150"
+            
           />
         </div>
       </div>
-      <div className="pt-5 padding-x pb-5">
+      <div className="padding-y padding-x">
         <h2 className="list-mark pb-3">My Works</h2>
         <div className="row projects">
           <div className="col-md-6 col-sm-12">
@@ -701,7 +698,7 @@ const downloadCV = () => {
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-center align-items-center pt-4">
+        <div className="d-flex justify-content-center align-items-center">
           <button
             className="btn btn-type"
             onClick={() =>
