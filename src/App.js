@@ -62,7 +62,7 @@ const downloadCV = () => {
           <h1 className="pb-3">Hi, I'm Kubranur Dogan!</h1>
           <p className="text-justify">
             Hi! I’m a computer engineering graduate passionate about web development and new technologies.
-            I love learning, solving problems, and working as part of a creative team.
+            I love learning, solving problems and working as part of a creative team.
             <br></br> I’m always ready to take on new challenges and grow in the tech world.{" "}
           </p>
           <div className=" d-flex justify-content-start align-items-center gap-3">
