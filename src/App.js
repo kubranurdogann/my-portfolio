@@ -27,9 +27,9 @@ function App() {
     setTimeout(() => setCopied(false), 1000);
   };
 
-const downloadCV = () => {
-    const fileUrl = "/My_CV.pdf "; 
-    const fileName = "Kubranur_dogan_CV.pdf"; 
+  const downloadCV = () => {
+    const fileUrl = "/My_CV.pdf ";
+    const fileName = "Kubranur_dogan_CV.pdf";
 
     const link = document.createElement("a");
     link.href = fileUrl;
@@ -54,29 +54,31 @@ const downloadCV = () => {
       <span className="background-section bg-5"></span>
       <span className="background-section bg-6"></span>
       <span className="background-section bg-7"></span>
-      <CoffeeButton/>
+      <CoffeeButton />
 
-
-      <div className="row m-5">
-        <div className="col-md-9 col-sm-12">
+      <div className="row align-items-center padding-y">
+        <div className="col-md-9 col-sm-12 order-2 order-md-1">
           <h1 className="pb-3">Hi, I'm Kubranur Dogan!</h1>
           <p className="text-justify">
-            Hi! I’m a computer engineering graduate passionate about web development and new technologies.
-            I love learning, solving problems and working as part of a creative team.
-            <br></br> I’m always ready to take on new challenges and grow in the tech world.{" "}
+            Hi! I’m a computer engineering graduate passionate about web
+            development and new technologies. I love learning, solving problems
+            and working as part of a creative team.
+            <br></br> I’m always ready to take on new challenges and grow in the
+            tech world.{" "}
           </p>
           <div className=" d-flex justify-content-start align-items-center gap-3">
-            <button className="btn btn-type" onClick={downloadCV}>My CV</button>
-          <button
-            className={`btn btn-type2  ${copied ? "copied" : ""}`}
-            onClick={copyEmail}
-          >
-            {copied ? "Copied!" : "Copy Email"}
-          </button>
+            <button className="btn btn-type" onClick={downloadCV}>
+              My CV
+            </button>
+            <button
+              className={`btn btn-type2  ${copied ? "copied" : ""}`}
+              onClick={copyEmail}
+            >
+              {copied ? "Copied!" : "Copy Email"}
+            </button>
           </div>
-          
         </div>
-        <div className="col-md-3 d-flex justify-content-center align-items-center">
+        <div className="col-md-3 order-1 order-md-2 d-flex justify-content-center align-items-center">
           <div className="avatar-border p-3">
             <img
               src={avatar}
@@ -89,28 +91,17 @@ const downloadCV = () => {
       </div>
       <div className="row tech-stack container">
         <div className="col-md-2 tech-logo ">
-          <img
-            src={HTML}
-            alt="html-logo"
-            className="img-fluid logo-hover"
-            
-          />
+          <img src={HTML} alt="html-logo" className="img-fluid logo-hover" />
         </div>
 
         <div className="col-md-2 tech-logo ">
-          <img
-            src={CSS}
-            alt="css-logo"
-            className="img-fluid logo-hover "
-            
-          />
+          <img src={CSS} alt="css-logo" className="img-fluid logo-hover " />
         </div>
         <div className="col-md-2 tech-logo ">
           <img
             src={react}
             alt="react-logo"
             className="img-fluid logo-hover img-react"
-            
           />
         </div>
         <div className="col-md-2 tech-logo ">
@@ -118,7 +109,6 @@ const downloadCV = () => {
             src={nodejs}
             alt="nodejs-logo"
             className="img-fluid logo-hover "
-           
           />
         </div>
         <div className="col-md-2 tech-logo ">
@@ -126,7 +116,6 @@ const downloadCV = () => {
             src={mongodb}
             alt="mongodb-logo"
             className="img-fluid logo-hover "
-            
           />
         </div>
         <div className="col-md-2 tech-logo ">
@@ -134,7 +123,6 @@ const downloadCV = () => {
             src={flutter}
             alt="flutter-logo"
             className="img-fluid logo-hover"
-            
           />
         </div>
       </div>
@@ -169,6 +157,12 @@ const downloadCV = () => {
                       <h1 class="modal-title fs-5" id="exampleModalLabel">
                         Movie Searching With AI
                       </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body ">
                       <div className="pb-3 px-3">
@@ -362,6 +356,12 @@ const downloadCV = () => {
                       <h1 class="modal-title fs-5" id="exampleModalLabel">
                         Dessert Shop - E-commerce Application
                       </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body ">
                       <div className="pb-3 px-3">
@@ -482,6 +482,12 @@ const downloadCV = () => {
                       <h1 class="modal-title fs-5" id="exampleModalLabel">
                         Full-Stack Bookstore Application
                       </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body ">
                       <div className="pb-3 px-3">
@@ -628,6 +634,12 @@ const downloadCV = () => {
                       <h1 class="modal-title fs-5" id="exampleModalLabel">
                         ☕Coffe Shop App
                       </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body ">
                       <div className="pb-3 px-3">
@@ -697,7 +709,7 @@ const downloadCV = () => {
         </div>
         <div className="d-flex justify-content-center align-items-center">
           <button
-            className="btn btn-type"
+            className="btn btn-type for-more-btn"
             onClick={() =>
               window.open(
                 "https://github.com/kubranurdogann?tab=repositories",

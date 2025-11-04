@@ -466,16 +466,16 @@ body {
   padding-bottom: 50px;
   padding-top: 50px;
 }
-.tech-stack img{
+.tech-stack img {
   max-width: 150px;
   max-height: 130px;
   object-fit: contain;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.tech-stack .img-react{
+.tech-stack .img-react {
   max-width: 100px !important;
 }
-.tech-logo{
+.tech-logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -492,10 +492,11 @@ body {
   transition: all 0.3s ease;
 }
 
-
 @media (max-width: 768px) {
   .avatar-border {
     margin-top: 50px;
+    z-index: 1;
+            margin-bottom: 30px;
   }
   .tech-logo {
     display: flex;
@@ -512,13 +513,18 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
-    .tech-stack {
-    flex-wrap: nowrap;          /* Alt alta dizilmesini engeller */
-    overflow-x: auto;           /* Taşan logoları yatay kaydırma yapar */
+  .tech-stack {
+    flex-wrap: nowrap; /* Alt alta dizilmesini engeller */
+    overflow-x: auto; /* Taşan logoları yatay kaydırma yapar */
     justify-content: flex-start;
     gap: 1.5rem;
     padding-bottom: 10px;
-    scrollbar-width: thin;      /* Firefox */
+    scrollbar-width: thin; /* Firefox */
+  }
+
+   .bg-3{
+    bottom: 300px !important;
+    right: 25px !important;
   }
 
   .tech-logo img {
@@ -526,10 +532,10 @@ body {
     height: auto;
   }
   .contact-form {
-    width: 25rem;
-}
+    width: 22rem;
+  }
 
-.coffee-button {
+  .coffee-button {
     width: 100px;
     height: 100px;
     bottom: 15px;
@@ -544,7 +550,7 @@ body {
     width: 45px !important; /* Kahve ikonunu da orantılı küçült */
   }
   .project-card {
-  min-height: 250px;
+    min-height: 215px;
   }
   .project-header {
     font-size: 17px;
@@ -553,4 +559,18 @@ body {
     padding: 6px 12px;
     font-size: 14px;
   }
+  .space-top {
+    margin-top: 0px !important;
+  }
+  .modal-body {
+    padding: 5px 15px;
+}
+.for-more-btn{
+  margin-top: -15px;
+    margin-bottom: 25px;
+}
+.available-btn{
+  top: 10px;
+    left: 5px;
+}
 }
