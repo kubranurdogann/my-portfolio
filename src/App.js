@@ -14,6 +14,12 @@ import proje2 from "./images/project-image-2.png";
 import proje3 from "./images/project-image-3.png";
 import proje4 from "./images/project-image-4.png";
 import proje42 from "./images/project-image-4-2.png";
+import proje51 from "./images/receipe-app.png";
+import proje52 from "./images/receipe-app2.png";
+import theMealDB from "./images/themealdb-api.png";
+
+
+
 import React, { useState } from "react";
 import "./App.css";
 import CoffeeButton from "./coffeeButton";
@@ -130,6 +136,123 @@ function App() {
         <h2 className="list-mark pb-3">My Works</h2>
         <div className="row projects">
           <div className="col-md-6 col-sm-12">
+            <div className="project-card">
+              <img
+                src={proje52}
+                alt="proje-img"
+                className="img-fluid project-image"
+              />
+              <button
+                type="button"
+                class="detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+              >
+                View Details
+              </button>
+              <div
+                class="modal fade modal-lg"
+                id="exampleModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Quick&Easy Recipes App
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body ">
+                      <div className="pb-3 px-3">
+                        <img
+                          src={proje51}
+                          alt="proje-img"
+                          className="img-fluid "
+                           
+                        />
+                      </div>
+                      <div className="d-flex justify-content-center align-items-start flex-column">
+                        <p className="modal-text">
+                          Quick & Easy Recipe App is a cross-platform mobile app developed with Flutter and Dart. 
+                          It allows users to browse food categories, view detailed recipes, and add or delete favorites. 
+                          The app integrates TheMealDB API to retrieve real-time recipe data and features an AI-powered 
+                          (openai) chat assistant that helps users generate meal ideas and get cooking guidance. 
+                          It offers a clean user interface, fluid navigation, 
+                          and a fast and intuitive cooking experience.
+                        </p>
+                        <div>
+                          <h5>Technologies Used</h5>
+                          <ul>
+                            <li className="p-2">
+                              <img
+                                src={theMealDB}
+                                alt="theMealDB-logo"
+                                className="img-fluid logo-hover"
+                                width="100"
+                              />
+                            </li>
+                            <li className="p-2">
+                              <img
+                                src={flutter}
+                                alt="flutter-logo"
+                                className="img-fluid logo-hover"
+                                width="100"
+                              />
+                            </li>
+                            
+                            <li className="p-2">
+                              <img
+                                src={openai}
+                                alt="openai-logo"
+                                className="img-fluid logo-hover"
+                                width="50"
+                              />
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        onClick={() =>
+                          window.open(
+                            "https://github.com/kubranurdogann/quick-and-easy-receipe-app",
+                            "_blank"
+                          )
+                        }
+                        type="button"
+                        class="btn btn-type2 d-flex align-items-center  p-2"
+                      >
+                        <svg
+                          className="source-code-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="currentColor"
+                        >
+                          <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+                        </svg>
+                        Source Code
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span className="project-header">
+                Quick&Easy Recipes App
+              </span>
+            </div>
             <div className="project-card">
               <img
                 src={proje1}
@@ -329,127 +452,7 @@ function App() {
               </div>
               <span className="project-header">Movie Searching With AI</span>
             </div>
-            <div className="project-card">
-              <img
-                src={proje3}
-                alt="proje-img"
-                className="img-fluid project-image"
-              />
-              <button
-                type="button"
-                class="detail-btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal3"
-              >
-                View Details
-              </button>
-              <div
-                class="modal fade modal-lg"
-                id="exampleModal3"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">
-                        Dessert Shop - E-commerce Application
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body ">
-                      <div className="pb-3 px-3">
-                        <img
-                          src={proje3}
-                          alt="proje-img"
-                          className="img-fluid "
-                        />
-                      </div>
-                      <div className="d-flex justify-content-center align-items-start flex-column">
-                        <p className="modal-text">
-                          Dessert Shop is a visually appealing, design-focused
-                          e-commerce web application where users can explore and
-                          purchase delicious desserts. Built with React,
-                          TypeScript, and Vite, the project emphasizes
-                          responsive and interactive UI elements — featuring
-                          hover animations, adaptive images, and a clean modern
-                          layout. It includes shopping cart functionality with
-                          quantity control, performance optimization with Vite,
-                          and a fully responsive Bootstrap-based design tailored
-                          for an engaging user experience.
-                        </p>
-                        <div>
-                          <h5>Technologies Used</h5>
-                          <ul>
-                            <li>
-                              <img
-                                src={bootstrap}
-                                alt="bootstrap-logo"
-                                className="img-fluid logo-hover"
-                                width="45"
-                              />
-                            </li>
-
-                            <li>
-                              <img
-                                src={vite}
-                                alt="vite-logo"
-                                className="img-fluid logo-hover"
-                                width="45"
-                              />
-                            </li>
-
-                            <li>
-                              <img
-                                src={react}
-                                alt="react-logo"
-                                className="img-fluid logo-hover"
-                                width="45"
-                              />
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        onClick={() =>
-                          window.open(
-                            "https://github.com/kubranurdogann/desserts-app-with-reactjs",
-                            "_blank"
-                          )
-                        }
-                        type="button"
-                        class="btn btn-type2 d-flex align-items-center  p-2"
-                      >
-                        <svg
-                          className="source-code-icon"
-                          xmlns="http://www.w3.org/2000/svg"
-                          x="0px"
-                          y="0px"
-                          width="30"
-                          height="30"
-                          viewBox="0 0 30 30"
-                          fill="currentColor"
-                        >
-                          <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
-                        </svg>
-                        Source Code
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <span className="project-header">
-                Dessert Shop - E-commerce Application
-              </span>
-            </div>
+            
           </div>
           <div className="col-md-6 col-sm-12">
             <div className="project-card">
@@ -705,6 +708,131 @@ function App() {
                 </div>
               </div>
             </div>
+            
+            </div>
+            <div className="col-md-6 col-sm-12">
+              <div className="project-card">
+              <img
+                src={proje3}
+                alt="proje-img"
+                className="img-fluid project-image"
+              />
+              <button
+                type="button"
+                class="detail-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+              >
+                View Details
+              </button>
+              <div
+                class="modal fade modal-lg"
+                id="exampleModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Dessert Shop - E-commerce Application
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body ">
+                      <div className="pb-3 px-3">
+                        <img
+                          src={proje3}
+                          alt="proje-img"
+                          className="img-fluid "
+                        />
+                      </div>
+                      <div className="d-flex justify-content-center align-items-start flex-column">
+                        <p className="modal-text">
+                          Dessert Shop is a visually appealing, design-focused
+                          e-commerce web application where users can explore and
+                          purchase delicious desserts. Built with React,
+                          TypeScript, and Vite, the project emphasizes
+                          responsive and interactive UI elements — featuring
+                          hover animations, adaptive images, and a clean modern
+                          layout. It includes shopping cart functionality with
+                          quantity control, performance optimization with Vite,
+                          and a fully responsive Bootstrap-based design tailored
+                          for an engaging user experience.
+                        </p>
+                        <div>
+                          <h5>Technologies Used</h5>
+                          <ul>
+                            <li>
+                              <img
+                                src={bootstrap}
+                                alt="bootstrap-logo"
+                                className="img-fluid logo-hover"
+                                width="45"
+                              />
+                            </li>
+
+                            <li>
+                              <img
+                                src={vite}
+                                alt="vite-logo"
+                                className="img-fluid logo-hover"
+                                width="45"
+                              />
+                            </li>
+
+                            <li>
+                              <img
+                                src={react}
+                                alt="react-logo"
+                                className="img-fluid logo-hover"
+                                width="45"
+                              />
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        onClick={() =>
+                          window.open(
+                            "https://github.com/kubranurdogann/desserts-app-with-reactjs",
+                            "_blank"
+                          )
+                        }
+                        type="button"
+                        class="btn btn-type2 d-flex align-items-center  p-2"
+                      >
+                        <svg
+                          className="source-code-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="currentColor"
+                        >
+                          <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+                        </svg>
+                        Source Code
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span className="project-header">
+                Dessert Shop - E-commerce Application
+              </span>
+            </div>
+             
           </div>
         </div>
         <div className="d-flex justify-content-center align-items-center">

@@ -294,7 +294,8 @@ body {
   margin-bottom: 50px;
   position: relative;
   overflow: hidden;
-  min-height: 320px;
+  min-height: 340px;
+  max-height: 340px;
   transition: filter 0.5s ease;
   box-shadow: 0 0px 20px rgba(221, 114, 210, 0.425);
 }
