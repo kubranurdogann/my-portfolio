@@ -721,13 +721,13 @@ function App() {
                 type="button"
                 class="detail-btn"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal3"
+                data-bs-target="#exampleModal5"
               >
                 View Details
               </button>
               <div
                 class="modal fade modal-lg"
-                id="exampleModal3"
+                id="exampleModal5"
                 tabindex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
